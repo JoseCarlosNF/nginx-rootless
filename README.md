@@ -1,5 +1,10 @@
 # NGINX Rootless
 
+<div align="center" style="display: flex; flex-direction: row;">
+  <img src="https://www.vectorlogo.zone/logos/nginx/nginx-ar21.svg">
+  <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg">
+</div>
+
 É inegável que a preocupação com a segurança deve estar em todas as etapas da
 entrega da aplicação.
 
@@ -75,13 +80,13 @@ USER nginx
 Com essas minimas modificações você estará rodando o *nginx* com um usuário não
 root.
 
-## Build
+## :building_construction: Build
 
 ```
 docker docker build -t nginx-rootless:0.1.0 .
 ```
 
-## Run
+## :running: Run
 
 ```
 docker run --rm --name nginx-rootless -p 80:80 -it nginx-rootless:0.1.0
